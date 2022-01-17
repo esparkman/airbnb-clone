@@ -1,0 +1,21 @@
+<%= content_for :title, @house.title %>
+<div class="container">
+  <article>
+    <%= image_tag @house.picture, width: "100%", alt: "House picture" %>
+    <p>
+      <%= @house.home_type %> &bull; <%= @house.town %>
+    </p>
+    <p><%= @house.title %></p>
+  </article>
+  <aside>
+    <h2>Choose a date</h2>
+    <div>
+      <%= text_field_tag 'date', '', data: {
+        controller: "date-picker",
+        flatpickr_date_format: "Y-m-d",
+        flatpickr_min_date: Time.zone.now
+      } %>
+    </div>
+
+  </aside>
+</div>

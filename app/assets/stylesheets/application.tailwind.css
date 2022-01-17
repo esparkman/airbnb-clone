@@ -7,9 +7,63 @@ body {
   padding-right: 30px;
 }
 
+main {
+  position: relative;
+  max-width: 56em;
+  background-color: white;
+  padding: 2em;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: block;
+  float: left;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+  margin-right: 15px;
+  color: #333;
+}
+
+nav a {
+  padding: 1em 0.5em;
+}
+
+.nav-container {
+  border-bottom: 1px solid #eee;
+  height: 50px;
+}
+
+img {
+  float: left;
+}
+
+ul {
+  float: right;
+}
+
 .houses {
   display: grid;
   grid-template-columns: 49% 49%;
   grid-template-rows: 300px 300px;
   grid-gap: 2%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-gap: 30px;
+}
+
+aside {
+  border: 1px solid #ccc;
+  padding: 20px;
 }
