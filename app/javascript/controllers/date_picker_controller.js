@@ -1,11 +1,8 @@
 import { Controller } from '@hotwired/stimulus';
 
 import Flatpickr from 'stimulus-flatpickr'
-import 'flatpickr/dist/themes/airbnb.css'
-
-export default class extends Controller {
+export default class extends Flatpickr {
   connect() {
     super.connect();
-    console.log("Hello World", Flatpickr)
   }
 }

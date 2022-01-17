@@ -10,7 +10,7 @@
   <aside>
     <h2>Choose a date</h2>
     <div>
-      <%= text_field_tag 'date', '', data: {
+      <%= text_field_tag 'date', 'Select Date', data: {
         controller: "date-picker",
         flatpickr_date_format: "Y-m-d",
         flatpickr_min_date: Time.zone.now
