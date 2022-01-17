@@ -9,13 +9,20 @@
   </article>
   <aside>
     <h2>Choose a date</h2>
-    <div>
-      <%= text_field_tag 'date', 'Select Date', data: {
-        controller: "date-picker",
-        flatpickr_date_format: "Y-m-d",
-        flatpickr_min_date: Time.zone.now
-      } %>
+    <div class="date-range-picker-container">
+      <div class="day-picker-input">
+        <%= text_field_tag 'date', 'From:', data: {
+          controller: "date-picker",
+          flatpickr_date_format: "Y-m-d",
+          flatpickr_min_date: Time.zone.now,
+        } %>
+      </div>
+      <div class="day-picker-input">
+        <%= text_field_tag 'date', 'To:', data: {
+          controller: "date-picker",
+          flatpickr_date_format: "Y-m-d"
+        } %>
+      </div>
     </div>
-
   </aside>
 </div>
